@@ -1,0 +1,133 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.section-principal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+}
+
+.container-principal{
+    padding: 50px;
+    background-color: #ffffff;
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container-principal > h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--card-price);
+}
+
+.container-principal > h2{
+    font-weight: 700;
+    color: var(--button);
+    font-size: 20px;
+}
+
+.container-principal > p{
+    font-weight: 400;
+    color: #d1d2d5;
+    width: 550px;
+}
+
+.container-secundario{
+    padding: 50px;
+    background-color: #2BB3B1;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+}
+
+.container-secundario > h3{
+    color: #ffffff;
+}
+
+.container-secundario > p{
+    color: #E7E9EF;
+}
+
+.price{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.price > h3{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.price > p{
+    color: #E7E9EF;
+}
+
+.container-secundario > button{
+    width: 250px;
+    height: 50px;
+    background-color: var(--button);
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px #5c5858;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+}
+
+.container-terciario{
+    padding: 50px;
+    background-color: #4ABEBD;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 10px;
+}
+
+.container-terciario > h3{
+    color: #ffffff;
+}
+
+.container-terciario > ul{
+    color: #E7E9EF;
+    list-style: none;
+    gap: 5px;
+}
+
+@media (max-width: 430px){
+    .section-principal{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+    }
+    .container-principal{
+        padding: 30px;
+    }
+    .container-principal > h1{
+        font-size: 20px;
+    }
+    .container-principal > h2{
+        font-size: 15px;
+    }
+    .container-principal > p{
+        width: 250px;
+    }
+    .container-secundario{
+        padding: 30px;
+        border-radius: 0px;
+    }
+    .container-terciario{
+        padding: 30px;
+        border-bottom-left-radius: 10px;
+    }
+}
