@@ -25,4 +25,6 @@ body{
     font-family: 'Karla', sans-serif;
     background-color: #E6EFF6;
     min-height: 100vh;
+    padding: 24px;
+    overflow: hidden;
 }
